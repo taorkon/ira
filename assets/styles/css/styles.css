@@ -15,11 +15,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 .header__nav-holder {
   box-sizing: border-box;
   width: 100%;
-  padding: 5vh 0 0 20vw;
+  padding: 5vh 0 0 10vw;
+  margin-bottom: 2rem;
+}
+.header__items :hover {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #003e44;
 }
 .header__menu {
   margin-block-start: 0;
@@ -35,6 +41,11 @@
   gap: 10vw;
 }
 .header__item-link {
+  font-family: "Unbounded", cursive;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 33.4px;
+  line-height: 29px;
   text-decoration: none;
   color: #003e44;
 }
@@ -48,8 +59,31 @@
   width: 50%;
   padding-left: 10vw;
 }
+.header__h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 29px;
+}
+.header__h1 {
+  font-family: "Unbounded", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+.header__h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 29px;
+}
 .header__img-holder {
   line-height: 0;
+  align-self: end;
 }
 .header__text {
   font-family: "Noto Sans", sans-serif;
@@ -57,4 +91,16 @@
   font-weight: 200;
   font-size: 21px;
   line-height: 29px;
+}
+
+.button {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 21px;
+  line-height: 29px;
+  color: #fff;
+  background-color: #003e44;
+  border-radius: 40px 5px 40px 5px;
+  width: 11rem;
 }
