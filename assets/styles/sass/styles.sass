@@ -21,6 +21,8 @@
     width: 100%
     max-width: 1920px
 
+    height: 100vh
+
     background-image: url("../../images/background.png")
     background-repeat: no-repeat
     background-size: cover
@@ -28,10 +30,8 @@
 
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: space-between
     align-items: center
-
-    //margin-bottom: 10rem
 
     &__nav-holder
         box-sizing: border-box
@@ -65,21 +65,19 @@
         display: flex
         align-items: center
 
-        padding-bottom: 200px
-
     &__content-holder
-        box-sizing: border-box
 
         width: 50%
         padding-left: 10vw
+        padding-bottom: 10vh
 
     &__title-holder
 
-        margin-top: 80px
+        margin-top: 8vh
     
     &__text-holder
 
-        margin: 80px 0 80px 0
+        margin: 8vh 0 8vh 0
 
     &__h2
         @include notosans-200-36
@@ -95,18 +93,21 @@
 
     &__text
         @include notosans-200-28
-        margin: 20px 0 20px 0
+        margin: 2rem 0 2rem 0
     
     &__img-holder
         line-height: 0
-        align-self: end
+        align-self: flex-end
+
+        width: 50vw
 
     &__img
-        width: 700px
+        width: 80%
+        padding-right: 20%
 
-        position: absolute
-        right: 200px
-        top: calc(100vh - 703.31px)
+        // position: absolute
+        // right: 200px
+        // top: calc(100vh - 703.31px)
 
     
 .button

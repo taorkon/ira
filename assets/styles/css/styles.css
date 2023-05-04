@@ -16,13 +16,14 @@
 .header {
   width: 100%;
   max-width: 1920px;
+  height: 100vh;
   background-image: url("../../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .header__nav-holder {
@@ -61,18 +62,17 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-bottom: 200px;
 }
 .header__content-holder {
-  box-sizing: border-box;
   width: 50%;
   padding-left: 10vw;
+  padding-bottom: 10vh;
 }
 .header__title-holder {
-  margin-top: 80px;
+  margin-top: 8vh;
 }
 .header__text-holder {
-  margin: 80px 0 80px 0;
+  margin: 8vh 0 8vh 0;
 }
 .header__h2 {
   font-family: "Noto Sans", sans-serif;
@@ -103,17 +103,16 @@
   font-weight: 200;
   font-size: 21px;
   line-height: 29px;
-  margin: 20px 0 20px 0;
+  margin: 2rem 0 2rem 0;
 }
 .header__img-holder {
   line-height: 0;
-  align-self: end;
+  align-self: flex-end;
+  width: 50vw;
 }
 .header__img {
-  width: 700px;
-  position: absolute;
-  right: 200px;
-  top: calc(100vh - 703.31px);
+  width: 80%;
+  padding-right: 20%;
 }
 
 .button {
