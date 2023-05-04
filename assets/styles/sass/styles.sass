@@ -9,6 +9,14 @@
     width: 100vw
     max-width: 100vw
 
+*,
+* ::before,
+* ::after
+    box-sizing: inherit
+    margin: 0
+    min-width: inherit
+    font-optical-sizing: auto
+
 .header
     width: 100%
     max-width: 1920px
@@ -23,7 +31,7 @@
     justify-content: center
     align-items: center
 
-    margin-bottom: 10rem
+    //margin-bottom: 10rem
 
     &__nav-holder
         box-sizing: border-box
@@ -47,7 +55,7 @@
         gap: 10vw
 
     &__item-link
-        @include unbounded-300-33
+        @include unbounded-300-28
         text-decoration: none
         color: $emerald
 
@@ -57,14 +65,25 @@
         display: flex
         align-items: center
 
+        padding-bottom: 200px
+
     &__content-holder
         box-sizing: border-box
 
         width: 50%
         padding-left: 10vw
 
+    &__title-holder
+
+        margin-top: 80px
+    
+    &__text-holder
+
+        margin: 80px 0 80px 0
+
     &__h2
         @include notosans-200-36
+        
     
     &__h1
         @include unbounded-400-57
@@ -72,19 +91,31 @@
 
     &__h3
         @include notosans-400-33 
-    
+        color: $emerald
 
+    &__text
+        @include notosans-200-28
+        margin: 20px 0 20px 0
+    
     &__img-holder
         line-height: 0
         align-self: end
 
-    &__text
-        @include notosans-200-28
-        
+    &__img
+        width: 700px
+
+        position: absolute
+        right: 200px
+        top: calc(100vh - 703.31px)
+
+    
 .button
         @include notosans-200-28
         color: $white
         background-color: $emerald
 
-        border-radius: 40px 5px 40px 5px
-        width: 11rem
+        border-radius: 20px 5px 20px 5px
+        border: none
+        width: 13rem
+
+        padding: 5px
